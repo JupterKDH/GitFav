@@ -1,0 +1,235 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+
+  --ff-primary: 'Roboto', sans-serif;
+}
+
+body{
+  font-size: 1.6rem;
+  color: #FFF;
+  background-color: #000000;
+}
+
+body *{
+  font-family: var(--ff-primary);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+#app {
+  max-width: 112rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 11.5rem 0 8.7rem;
+
+}
+
+header h1{
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.search{
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.search input{
+  height: 3.2rem;
+  border: none;
+  border-radius: 0.5rem;
+
+  padding: 1.45rem 1.6rem;
+
+  background-color: #06181C;
+
+  color: #FFF;
+
+  width: 46rem;
+}
+
+.search button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+
+  background-color: #065E7C;
+
+  border-radius: 0.5rem;
+  height: 3.2rem;
+  border: none;
+
+  padding: 1.2rem 3.2rem;
+
+  cursor: pointer;
+
+  color: #FFF;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+
+  transition: all .7s ease;
+}
+
+.search button:hover{
+  background-color: #FFF;
+  color: #065E7C;
+  
+}
+
+.search button:hover > svg path{
+  fill: #065E7C;
+}
+
+
+.table{
+  
+  border-radius: 1.2rem;
+  border: 1px solid #4A808C;
+  overflow: hidden;
+  
+  max-height: 68.8rem;
+  /*box-shadow: 0 0rem 3rem 1rem rgba(74, 128, 140, 0.7);*/
+  overflow-y: overlay;
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+table *{
+  font-size: 1.4rem;
+  color: #FFF;
+  
+}
+
+table th{
+  background: #092D38;
+  text-align: left;
+
+  padding: 1.6rem 4rem;
+
+}
+
+table th:first-child {
+  width: 35vw;
+}
+
+.table::-webkit-scrollbar {
+  width: 2.2rem;
+  height: 2rem;
+}
+
+.table::-webkit-scrollbar-thumb {
+  background-color: #4A808C;
+  border-radius: 1rem;
+
+  border: 0.8rem solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+}
+
+table tbody tr:nth-child(odd){
+  background: rgba(6, 22, 27, 0.5);
+}
+
+table tbody tr:nth-child(even){
+  background-color:#06181C;
+
+  border-top: 1px solid #4a808c;
+  border-bottom: 1px solid #4a808c;
+}
+
+table td{
+  padding: 2.4rem 4rem;
+}
+
+td.user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+td.user img{
+  width: 5rem;
+  height: 5rem;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+}
+
+td.user a {
+  text-decoration: none;
+}
+
+td.user a p {
+  font-weight: bold;
+}
+
+td .remove{
+  background: none;
+  border: none;
+
+  color: #F75A68;
+
+  cursor: pointer;
+}
+
+.empty {
+  background-color: #0f1a1d;
+
+  display: flex;
+
+  border-radius: 0 0 1rem 1rem;
+}
+
+.blank {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+
+  margin: 21rem auto 28.7rem;
+}
+
+.blank svg {
+  width: 13.2rem;
+  height: 12.5rem;
+}
+
+.blank h2 {
+  font-size: 4rem;
+  line-height: 2.5rem;
+  color: #FFF;
+}
+
+.hide {
+  display: none;
+}
